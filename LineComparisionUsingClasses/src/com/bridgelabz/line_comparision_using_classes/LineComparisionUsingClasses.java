@@ -32,8 +32,11 @@ public class LineComparisionUsingClasses {
         double compare = Double.compare(l1,l2);
         if(compare>0){
             System.out.println("The length of line L1 is greater than L2.");
-        }else {
+        }else if (compare<0){
             System.out.println("The length of line L2 is greater than L1.");
+        }
+        else{
+            System.out.println("The length of L1 and L2 are equal.");
         }
     }
 }
